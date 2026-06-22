@@ -1,0 +1,10 @@
+{
+  "name": "clinica-aguer",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix clinica-app",
+    "build": "npm run build --prefix clinica-app",
+    "preview": "npm run preview --prefix clinica-app",
+    "install:app": "npm install --prefix clinica-app"
+  }
+}
