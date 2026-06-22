@@ -1,0 +1,5 @@
+{
+  "installCommand": "npm install --prefix clinica-app",
+  "buildCommand": "npm run build --prefix clinica-app",
+  "outputDirectory": "clinica-app/dist"
+}

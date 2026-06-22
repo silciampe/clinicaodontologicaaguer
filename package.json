@@ -2,6 +2,7 @@
   "name": "clinica-aguer",
   "private": true,
   "scripts": {
+    "postinstall": "npm install --prefix clinica-app",
     "dev": "npm run dev --prefix clinica-app",
     "build": "npm run build --prefix clinica-app",
     "preview": "npm run preview --prefix clinica-app",
