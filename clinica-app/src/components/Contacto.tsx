@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { contactInfo, logo } from "../data/content";
-import { getWhatsAppHref } from "../lib/contact";
+import { getTelHref, getWhatsAppHref } from "../lib/contact";
 import { fadeUp, staggerContainer } from "../lib/animations";
 
 const whatsappHref = getWhatsAppHref(contactInfo.whatsapp);
@@ -11,16 +11,27 @@ const contactItems = [
     label: "Dirección",
     value: contactInfo.address,
     href: contactInfo.mapsLink,
+    external: true,
   },
   {
     label: "WhatsApp",
     value: contactInfo.whatsapp,
     href: whatsappHref,
+    external: true,
+  },
+  {
+    label: "Tel. fijo",
+    value: contactInfo.phone,
+    href: getTelHref(contactInfo.phone),
   },
   {
     label: "Horarios",
     value: contactInfo.hours,
-    href: undefined,
+  },
+  {
+    label: "Urgencias",
+    value: contactInfo.urgencias,
+    href: getTelHref(contactInfo.urgencias),
   },
 ];
 
@@ -70,16 +81,8 @@ export default function Contacto() {
                   {item.href ? (
                     <a
                       href={item.href}
-                      target={
-                        item.label === "Dirección" || item.label === "WhatsApp"
-                          ? "_blank"
-                          : undefined
-                      }
-                      rel={
-                        item.label === "Dirección" || item.label === "WhatsApp"
-                          ? "noopener noreferrer"
-                          : undefined
-                      }
+                      target={item.external ? "_blank" : undefined}
+                      rel={item.external ? "noopener noreferrer" : undefined}
                       className="mt-2 block text-base font-medium text-neutral-dark transition-colors hover:text-primary"
                     >
                       {item.value}

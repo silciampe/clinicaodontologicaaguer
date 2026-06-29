@@ -1,5 +1,7 @@
 export function getWhatsAppDigits(number: string) {
-  return number.replace(/\D/g, "");
+  const digits = number.replace(/\D/g, "");
+  if (digits.startsWith("54")) return digits;
+  return `549${digits}`;
 }
 
 export function getWhatsAppHref(
@@ -11,6 +13,7 @@ export function getWhatsAppHref(
 }
 
 export function getTelHref(number: string) {
-  const digits = getWhatsAppDigits(number);
-  return `tel:+${digits}`;
+  const digits = number.replace(/\D/g, "");
+  if (digits.startsWith("54")) return `tel:+${digits}`;
+  return `tel:+54${digits}`;
 }

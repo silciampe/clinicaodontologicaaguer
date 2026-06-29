@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { coverPhotoMobile } from "../data/content";
 import { fadeUp } from "../lib/animations";
 
+const heroTitle =
+  "Cada detalle está pensado para recuperar la sonrisa del paciente, desde la salud y la estética.";
+
 export default function Hero() {
   return (
     <>
@@ -32,9 +35,9 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             transition={{ delay: 0.1 }}
-            className="font-display text-3xl font-bold leading-[1.1] tracking-tight text-neutral-dark sm:text-4xl"
+            className="font-display text-2xl font-bold leading-[1.25] tracking-tight text-neutral-dark sm:text-[1.75rem]"
           >
-            Odontología centrada en las personas.
+            {heroTitle}
           </motion.h1>
 
           <motion.p
@@ -85,7 +88,7 @@ export default function Hero() {
         </div>
 
         <div className="relative mx-auto w-full max-w-7xl px-8 pt-40 pb-20">
-          <div className="max-w-2xl">
+          <div className="max-w-3xl">
             <motion.span
               variants={fadeUp}
               initial="hidden"
@@ -100,9 +103,9 @@ export default function Hero() {
               initial="hidden"
               animate="visible"
               transition={{ delay: 0.1 }}
-              className="font-display text-6xl font-bold leading-[1.1] tracking-tight text-neutral-dark xl:text-7xl"
+              className="font-display text-4xl font-bold leading-[1.2] tracking-tight text-neutral-dark xl:text-5xl"
             >
-              Odontología centrada en las personas.
+              {heroTitle}
             </motion.h1>
 
             <motion.p

@@ -15,21 +15,21 @@ export const navLinks = [
 export const professionals = [
   {
     name: "Od. Pablo Aguer",
-    role: "Director · Odontología General",
+    role: "Director · Implantología, prótesis y ortodoncia",
     description:
-      "Con una trayectoria dedicada a la excelencia clínica, lidera la clínica con un enfoque centrado en la atención personalizada y la formación continua.",
+      "Con una trayectoria de más de 30 años, dedicada a la excelencia clínica. Especializado en implantología, prótesis y ortodoncia utilizando la última tecnología en odontología digital.",
   },
   {
     name: "Od. Matías Ponti",
-    role: "Odontología General",
+    role: "Especialista en endodoncia",
     description:
-      "Comprometido con brindar tratamientos de alta calidad, combina precisión técnica con una comunicación clara y empática hacia cada paciente.",
+      "Comprometido con brindar tratamientos de alta calidad, combina precisión técnica y alta tecnología, para brindar excelentes resultados.",
   },
   {
     name: "Od. Dominique Gautier",
-    role: "Odontología Infantil",
+    role: "Odontología pediátrica, ortopedia y general",
     description:
-      "Especializada en odontología infantil, brinda una atención cercana y cuidadosa a los más chicos, creando un ambiente de confianza en cada consulta.",
+      "Especializada en odontología infantil y ortopedia, brinda una atención cercana y cuidadosa a los más chicos, creando un ambiente de confianza en cada consulta.",
   },
 ];
 
@@ -88,8 +88,10 @@ export const treatments = [
 
 export const contactInfo = {
   address: "España 416, San Nicolás de los Arroyos, Buenos Aires",
-  whatsapp: "+54 9 336 4379196",
-  hours: "Lunes a Viernes · 9:00 a 18:00 hs",
+  whatsapp: "336 4379169",
+  phone: "336 4421631",
+  hours: "Lunes a viernes · 8 a 19 hs",
+  urgencias: "336 421 2219",
   mapsEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6666.471864875635!2d-60.2170457!3d-33.3387855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b767842b3e9269%3A0xebf9b282d4f37139!2sClinica%20Dental%20Aguer!5e0!3m2!1ses-419!2sar!4v1781805807491!5m2!1ses-419!2sar",
   mapsLink: "https://maps.google.com/?q=Clinica+Dental+Aguer+España+416+San+Nicolás",
