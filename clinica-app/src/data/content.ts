@@ -1,7 +1,10 @@
 export const logo = "/imagenes/logo.jpg";
+export const itiviLogo = "/imagenes/itivi-logo.png";
 export const teamPhoto = "/imagenes/odontologos.jpg";
 export const coverPhoto = "/imagenes/portada.jpg";
 export const coverPhotoMobile = "/imagenes/portada-chica.jpg";
+export const mainConsultoryPhoto = "/imagenes/consultorioprincipal.png";
+export const receptionPhoto = "/imagenes/secretaria.jpeg";
 
 export const navLinks = [
   { label: "La Clínica", href: "#clinica" },

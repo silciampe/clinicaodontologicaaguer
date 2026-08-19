@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { contactInfo, logo } from "../data/content";
+import { contactInfo, logo, receptionPhoto } from "../data/content";
 import { getTelHref, getWhatsAppHref } from "../lib/contact";
 import { fadeUp, staggerContainer } from "../lib/animations";
 
@@ -61,12 +61,31 @@ export default function Contacto() {
             >
               Estamos para atenderle
             </motion.h2>
+
+            <div className="relative mb-10 mt-8 w-full max-w-lg">
+              <div className="overflow-hidden rounded-[20px] bg-white p-2 shadow-[var(--shadow-hover)] ring-1 ring-primary/10">
+                <img
+                  src={receptionPhoto}
+                  alt="Recepción de Clínica Dental Aguer"
+                  className="aspect-[4/3] w-full rounded-[14px] object-cover object-[center_25%]"
+                />
+              </div>
+              <p className="mt-3 text-xs font-medium uppercase tracking-[0.2em] text-secondary">
+                Recepción · Atención personalizada
+              </p>
+              <div
+                className="absolute -bottom-4 -right-4 hidden h-20 w-20 rounded-[20px] border border-white bg-primary/10 backdrop-blur-sm lg:block"
+                aria-hidden="true"
+              />
+            </div>
+
             <motion.p
               variants={fadeUp}
               className="mt-6 max-w-md text-base leading-relaxed text-neutral-medium"
             >
               Comuníquese con nosotros por WhatsApp para consultas, información
-              o para coordinar su próxima visita.
+              o para coordinar su próxima visita. En recepción le recibimos con
+              calidez y dedicación.
             </motion.p>
 
             <motion.div

@@ -1,4 +1,4 @@
-import { logo, navLinks } from "../data/content";
+import { itiviLogo, logo, navLinks } from "../data/content";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -37,14 +37,19 @@ export default function Footer() {
           </ul>
         </div>
 
-        <p className="mt-8 text-center text-xs text-neutral-medium">
+        <p className="mt-8 flex items-center justify-center gap-2 text-xs text-neutral-medium">
           Realizado por{" "}
           <a
             href="https://www.itivi.com.ar"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-medium text-primary transition-colors hover:text-primary/80"
+            className="inline-flex items-center gap-2 font-medium text-primary transition-opacity hover:opacity-80"
           >
+            <img
+              src={itiviLogo}
+              alt="ITIVI"
+              className="h-5 w-5 object-contain"
+            />
             ITIVI
           </a>
         </p>

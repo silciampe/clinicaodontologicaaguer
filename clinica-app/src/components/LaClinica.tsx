@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { clinicValues } from "../data/content";
+import { mainConsultoryPhoto } from "../data/content";
 import { fadeUp, staggerContainer } from "../lib/animations";
 
 export default function LaClinica() {
@@ -56,8 +57,8 @@ export default function LaClinica() {
           >
             <div className="overflow-hidden rounded-[20px] shadow-[var(--shadow-soft)]">
               <img
-                src="/imagenes/consultorio1.jpg"
-                alt="Interior de la clínica"
+                src={mainConsultoryPhoto}
+                alt="Consultorio principal de Clínica Dental Aguer"
                 className="aspect-[4/5] w-full object-cover"
               />
             </div>
