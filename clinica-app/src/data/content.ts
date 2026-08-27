@@ -60,13 +60,13 @@ export const facilities = [
     title: "Consultorio 1",
     description:
       "Un espacio amplio y luminoso con equipamiento digital de última generación para diagnóstico y tratamiento.",
-    image: "/imagenes/consultorio1.jpg",
+    image: "/imagenes/consultorio1.jpeg",
   },
   {
     title: "Consultorio 2",
     description:
       "Un entorno cálido para conversar, planificar tratamientos y recibir atención personalizada.",
-    image: "/imagenes/consultorio2.jpg",
+    image: "/imagenes/consultorio2.jpeg",
   },
   {
     title: "Consultorio 3",
