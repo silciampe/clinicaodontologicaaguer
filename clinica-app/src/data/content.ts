@@ -72,7 +72,7 @@ export const facilities = [
     title: "Consultorio 3",
     description:
       "Tecnología clínica avanzada en un ambiente higiénico, cómodo y pensado para su tranquilidad.",
-    image: "/imagenes/consultorio3.jpg",
+    image: "/imagenes/consultorio3Nuevo.jpeg",
   },
 ];
 
