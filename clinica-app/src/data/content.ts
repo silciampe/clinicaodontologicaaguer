@@ -29,7 +29,7 @@ export const professionals = [
       "Comprometido con brindar tratamientos de alta calidad, combina precisión técnica y alta tecnología, para brindar excelentes resultados.",
   },
   {
-    name: "Od. Dominique Gautier",
+    name: "Od. María Eugenia Ferrari",
     role: "Odontología pediátrica, ortopedia y general",
     description:
       "Especializada en odontología infantil y ortopedia, brinda una atención cercana y cuidadosa a los más chicos, creando un ambiente de confianza en cada consulta.",

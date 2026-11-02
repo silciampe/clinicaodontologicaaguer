@@ -46,7 +46,7 @@ export default function Equipo() {
         >
           <img
             src={teamPhoto}
-            alt="Od. Pablo Aguer, Od. Matías Ponti y Od. Dominique Gautier"
+            alt="Od. Pablo Aguer, Od. Matías Ponti y Od. María Eugenia Ferrari"
             className="aspect-[21/9] w-full object-cover object-[center_30%] sm:aspect-[2.4/1]"
           />
         </motion.div>

@@ -60,4 +60,4 @@ Pacientes potenciales que desean conocer:
 
 * Od. Pablo Aguer
 * Od. Matías Ponti
-* Od. Dominique Gautier
+* Od. María Eugenia Ferrari

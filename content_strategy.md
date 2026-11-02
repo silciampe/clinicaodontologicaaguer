@@ -33,7 +33,7 @@ Od. Pablo Aguer
 
 Od. Matías Ponti
 
-Od. Dominique Gautier
+Od. María Eugenia Ferrari
 
 Cada profesional debe mostrarse mediante una tarjeta elegante con fotografía y breve descripción.
 
