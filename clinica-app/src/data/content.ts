@@ -15,7 +15,14 @@ export const navLinks = [
   { label: "Contacto", href: "#contacto" },
 ];
 
-export const professionals = [
+export type Professional = {
+  name: string;
+  role: string;
+  description: string;
+  photo?: string;
+};
+
+export const professionals: Professional[] = [
   {
     name: "Od. Pablo Aguer",
     role: "Director · Implantología, prótesis y ortodoncia",
@@ -29,10 +36,11 @@ export const professionals = [
       "Comprometido con brindar tratamientos de alta calidad, combina precisión técnica y alta tecnología, para brindar excelentes resultados.",
   },
   {
-    name: "Od. María Eugenia Ferrari",
-    role: "Odontología pediátrica, ortopedia y general",
+    name: "Dra. María Eugenia Ferrari",
+    role: "Odontopediatría, ortopedia y odontología en general en adultos",
     description:
-      "Especializada en odontología infantil y ortopedia, brinda una atención cercana y cuidadosa a los más chicos, creando un ambiente de confianza en cada consulta.",
+      "Odontóloga especialista en odontopediatría, ortopedia y odontología en general en adultos. Brinda una atención cercana y cuidadosa, creando un ambiente de confianza en cada consulta.",
+    photo: "/imagenes/maria-eugenia-ferrari.jpg",
   },
 ];
 

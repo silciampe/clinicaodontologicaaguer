@@ -46,7 +46,7 @@ export default function Equipo() {
         >
           <img
             src={teamPhoto}
-            alt="Od. Pablo Aguer, Od. Matías Ponti y Od. María Eugenia Ferrari"
+            alt="Od. Pablo Aguer, Od. Matías Ponti y Dra. María Eugenia Ferrari"
             className="aspect-[21/9] w-full object-cover object-[center_30%] sm:aspect-[2.4/1]"
           />
         </motion.div>
@@ -55,7 +55,7 @@ export default function Equipo() {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={staggerContainer}
-          className="section-gap grid gap-5 md:grid-cols-3 md:gap-8 lg:gap-10"
+          className="section-gap grid items-start gap-5 md:grid-cols-3 md:gap-8 lg:gap-10"
         >
           {professionals.map((pro) => (
             <motion.article
@@ -74,6 +74,15 @@ export default function Equipo() {
               <p className="mt-4 text-sm leading-relaxed text-neutral-medium">
                 {pro.description}
               </p>
+              {pro.photo ? (
+                <img
+                  src={pro.photo}
+                  alt={pro.name}
+                  width={240}
+                  height={320}
+                  className="mx-auto mt-6 h-auto w-60 max-w-full rounded-[16px] object-contain"
+                />
+              ) : null}
             </motion.article>
           ))}
         </motion.div>
